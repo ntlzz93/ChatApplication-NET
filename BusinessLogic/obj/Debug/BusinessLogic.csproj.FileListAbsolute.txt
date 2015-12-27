@@ -1,9 +1,0 @@
-D:\Study\IT\NET\ChatApplication\BusinessLogic\obj\Debug\BusinessLogic.Properties.Resources.resources
-D:\Study\IT\NET\ChatApplication\BusinessLogic\obj\Debug\BusinessLogic.csproj.GenerateResource.Cache
-D:\Study\IT\NET\ChatApplication\BusinessLogic\bin\Debug\BusinessLogic.dll
-D:\Study\IT\NET\ChatApplication\BusinessLogic\bin\Debug\BusinessLogic.pdb
-D:\Study\IT\NET\ChatApplication\BusinessLogic\bin\Debug\DataAccess.dll
-D:\Study\IT\NET\ChatApplication\BusinessLogic\bin\Debug\DataAccess.pdb
-D:\Study\IT\NET\ChatApplication\BusinessLogic\obj\Debug\BusinessLogic.csprojResolveAssemblyReference.cache
-D:\Study\IT\NET\ChatApplication\BusinessLogic\obj\Debug\BusinessLogic.dll
-D:\Study\IT\NET\ChatApplication\BusinessLogic\obj\Debug\BusinessLogic.pdb

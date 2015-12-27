@@ -1,0 +1,8 @@
+D:\Study\IT\NET\ChatApp\Client\Client\bin\Debug\Client.exe.config
+D:\Study\IT\NET\ChatApp\Client\Client\bin\Debug\Client.exe
+D:\Study\IT\NET\ChatApp\Client\Client\bin\Debug\Client.pdb
+D:\Study\IT\NET\ChatApp\Client\Client\obj\Debug\Client.Client.resources
+D:\Study\IT\NET\ChatApp\Client\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Study\IT\NET\ChatApp\Client\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\Study\IT\NET\ChatApp\Client\Client\obj\Debug\Client.exe
+D:\Study\IT\NET\ChatApp\Client\Client\obj\Debug\Client.pdb

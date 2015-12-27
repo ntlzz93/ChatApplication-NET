@@ -1,0 +1,9 @@
+D:\Study\IT\NET\ChatApp\Server\Server\bin\Debug\Server.exe.config
+D:\Study\IT\NET\ChatApp\Server\Server\bin\Debug\Server.exe
+D:\Study\IT\NET\ChatApp\Server\Server\bin\Debug\Server.pdb
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.Server.resources
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.exe
+D:\Study\IT\NET\ChatApp\Server\Server\obj\Debug\Server.pdb
