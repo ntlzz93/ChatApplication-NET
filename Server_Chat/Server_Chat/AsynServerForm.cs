@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
@@ -15,6 +13,7 @@ using System.Collections;
 
 namespace Server_Chat
 {
+    #region Command
     // The commands for iteraction between the server and the client.
     enum Command
     {
@@ -24,6 +23,9 @@ namespace Server_Chat
         List,   // Get a list of users in the chat room from the server
         Null    // No command
     }
+    #endregion
+
+    #region ServerForm
     public partial class AsynServerForm : Form
     {
         /// <summary>
@@ -61,12 +63,12 @@ namespace Server_Chat
             {
                 serverSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
-                // Port default: 11000
-                IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Any, 11000);
+                // Port default: 1000
+                IPEndPoint ipEndPoint = new IPEndPoint(IPAddress.Any, 1000);
 
                 //Bind and Listen on the given address
                 serverSocket.Bind(ipEndPoint);
-                serverSocket.Listen(10);
+                serverSocket.Listen(4);
 
                 serverSocket.BeginAccept(new AsyncCallback(OnAccept), null);
             }
@@ -203,6 +205,9 @@ namespace Server_Chat
             }
         }
     }
+    #endregion
+
+    #region Data
     class Data
     {
         public Data()
@@ -281,4 +286,5 @@ namespace Server_Chat
         // Command type(login,logout,send message,..)
         public Command cmdCommand;
     }
+    #endregion
 }

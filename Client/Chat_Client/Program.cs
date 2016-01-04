@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Chat_Client
@@ -16,7 +14,17 @@ namespace Chat_Client
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+            LoginForm loginform = new LoginForm();
             Application.Run(new LoginForm());
+
+            if (loginform.DialogResult == DialogResult.OK)
+            {
+                ClientForm clientForm = new ClientForm();
+                clientForm.clientSocket = loginform.clientSocket;
+                clientForm.strName = loginform.strName;
+
+                clientForm.ShowDialog();
+            }
         }
     }
 }

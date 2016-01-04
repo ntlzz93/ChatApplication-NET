@@ -3,9 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Net;
 using System.Net.Sockets;
@@ -30,8 +28,8 @@ namespace Chat_Client
                 clientSocket = new Socket(AddressFamily.InterNetwork, SocketType.Stream, ProtocolType.Tcp);
 
                 IPAddress ipAddress = IPAddress.Parse(txtServerIP.Text);
-                //Server is listening on port 11000
-                IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, 11000);
+                //Server is listening on port 1000
+                IPEndPoint ipEndPoint = new IPEndPoint(ipAddress, 1000);
 
                 //Connect to the server
                 clientSocket.BeginConnect(ipEndPoint, new AsyncCallback(OnConnect), null);

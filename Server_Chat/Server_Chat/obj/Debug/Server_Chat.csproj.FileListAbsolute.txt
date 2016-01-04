@@ -7,3 +7,12 @@ D:\Study\IT\NET\Chat\Server_Chat\Server_Chat\bin\Debug\Server_Chat.exe
 D:\Study\IT\NET\Chat\Server_Chat\Server_Chat\bin\Debug\Server_Chat.pdb
 D:\Study\IT\NET\Chat\Server_Chat\Server_Chat\obj\Debug\Server_Chat.exe
 D:\Study\IT\NET\Chat\Server_Chat\Server_Chat\obj\Debug\Server_Chat.pdb
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\bin\Debug\Server_Chat.exe.config
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.exe
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.pdb
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\bin\Debug\Server_Chat.exe
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\bin\Debug\Server_Chat.pdb
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.csprojResolveAssemblyReference.cache
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.AsynServerForm.resources
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.Properties.Resources.resources
+D:\Study\IT\NET\ChatApplication\Server_Chat\Server_Chat\obj\Debug\Server_Chat.csproj.GenerateResource.Cache
