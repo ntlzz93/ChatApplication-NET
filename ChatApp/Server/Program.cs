@@ -17,5 +17,13 @@ namespace Server
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Main());
         }
+
+        /// <summary>
+        /// Invokes an action on the UI thread
+        /// </summary>
+        public static void Invoke(this Control control, Action action)
+        {
+            control.Invoke(action);
+        }
     }
 }
