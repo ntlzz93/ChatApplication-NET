@@ -25,3 +25,12 @@ C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Server\obj\Debug\Server.Main.resources
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Server\obj\Debug\Server.PrivateChat.resources
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Server\obj\Debug\Server.Properties.Resources.resources
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Server\obj\Debug\Server.csproj.GenerateResource.Cache
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.exe
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.pdb
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\bin\Debug\Server.exe
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\bin\Debug\Server.pdb
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.csprojResolveAssemblyReference.cache
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.Main.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.PrivateChat.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.Properties.Resources.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Server\obj\Debug\Server.csproj.GenerateResource.Cache

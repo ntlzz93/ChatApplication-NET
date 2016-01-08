@@ -22,6 +22,8 @@ namespace Server
         public void Start()
         {
             if (Listening) return;
+
+            // Bind the socket to the local endpoint and listen for incoming connections.
             _socket.Bind(new IPEndPoint(0, Port));
             _socket.Listen(0);
             _socket.BeginAccept(Callback, null);
@@ -39,6 +41,11 @@ namespace Server
 
         public delegate void SocketAcceptedHandler(Socket e);
         public event SocketAcceptedHandler SocketAccepted;
+
+        /// <summary>
+        /// The callback method is called when a new connection request is received on the socket
+        /// </summary>
+        /// <param name="ar"></param>
         void Callback(IAsyncResult ar)
         {
             try

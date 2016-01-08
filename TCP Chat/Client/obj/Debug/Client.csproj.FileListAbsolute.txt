@@ -38,3 +38,5 @@ C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.PrivateChatForm
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.Properties.Resources.resources
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.PublicChatForm.resources
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.csproj.GenerateResource.Cache
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.exe
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.pdb
