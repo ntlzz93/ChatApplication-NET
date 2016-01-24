@@ -91,10 +91,12 @@ namespace Server
                             BroadcastData("Users|" + users.TrimEnd('|'));
                             BroadcastData("RefreshChat|" + txtReceive.Text);
                             break;
+                        // excute public chat
                         case "Message":
                             txtReceive.Text += command[1] + " says: " + command[2] + "\r\n";
                             BroadcastData("RefreshChat|" + txtReceive.Text);
                             break;
+                        // excute private chat
                         case "pMessage":
                             this.Invoke(() =>
                             {

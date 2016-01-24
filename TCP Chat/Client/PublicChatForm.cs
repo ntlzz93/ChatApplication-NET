@@ -34,6 +34,7 @@ namespace Client
             var cmd = received.Split('|');
             switch (cmd[0])
             {
+                    // when connect
                 case "Users":
                     this.Invoke(() =>
                     {
@@ -47,18 +48,21 @@ namespace Client
                         }
                     });
                     break;
+                    // when receive respond message from server
                 case "Message":
                     this.Invoke(() =>
                     {
                         txtReceive.Text += cmd[1] + "\r\n";
                     });
                     break;
+                    // when repeate content chat with server.
                 case "RefreshChat":
                     this.Invoke(() =>
                     {
                         txtReceive.Text = cmd[1];
                     });
                     break;
+                // open private chat by toolstrip
                 case "Chat":
                     this.Invoke(() =>
                     {
@@ -66,6 +70,7 @@ namespace Client
                         pChat.Show();
                     });
                     break;
+                    // excute private chat
                 case "pMessage":
                     this.Invoke(() =>
                     {

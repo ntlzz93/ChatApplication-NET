@@ -40,3 +40,11 @@ C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.PublicChatForm.
 C:\Users\ntlzz\Desktop\TCP Chat\TCP Chat\Client\obj\Debug\Client.csproj.GenerateResource.Cache
 D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.exe
 D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.pdb
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\bin\Debug\Client.exe
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\bin\Debug\Client.pdb
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.csprojResolveAssemblyReference.cache
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.LoginForm.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.PrivateChatForm.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.Properties.Resources.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.PublicChatForm.resources
+D:\Study\IT\NET\ChatApplication\TCP Chat\Client\obj\Debug\Client.csproj.GenerateResource.Cache
