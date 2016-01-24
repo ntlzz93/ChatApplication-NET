@@ -6,6 +6,7 @@ namespace Server
 {
     public partial class PrivateChat : Form
     {
+        // server
         private readonly Main Main;
 
         public PrivateChat(Main main)

@@ -35,6 +35,7 @@ namespace Server
             var client = new Client(e);
             client.Received += client_Received;
             client.Disconnected += client_Disconnected;
+            //connect to client
             this.Invoke(() =>
             {
                 string ip = client.Ip.ToString().Split(':')[0];
@@ -68,6 +69,7 @@ namespace Server
 
         private void client_Received(Client sender, byte[] data)
         {
+            //Executes the specified delegate on the thread that owns the control's underlying window handle.
             this.Invoke(() =>
             {
                 for (int i = 0; i < clientList.Items.Count; i++)
@@ -136,6 +138,7 @@ namespace Server
             }
         }
 
+        //private chat with client in toolstrip
         private void chatWithClientToolStripMenuItem_Click(object sender, EventArgs e)
         {
             foreach (var client in from ListViewItem item in clientList.SelectedItems select (Client) item.Tag)

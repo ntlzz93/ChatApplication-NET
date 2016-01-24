@@ -20,13 +20,15 @@ namespace Server
         {
             _socket = accepted;
             Ip = (IPEndPoint) _socket.RemoteEndPoint;
-            _socket.BeginReceive(new byte[] {0}, 0, 0, 0, Callback, null);
+            //Begins to asynchronously receive data from a connected Socket.
+            _socket.BeginReceive(new byte[] {0}, 0, 0, 0, Callback, null); // ip // nickname // status
         }
 
         void Callback(IAsyncResult ar)
         {
             try
             {
+                //successfully complete the read operation and return the number of bytes read.
                 _socket.EndReceive(ar);
                 var buffer = new byte[_socket.ReceiveBufferSize];
                 var rec = _socket.Receive(buffer, buffer.Length, 0);
