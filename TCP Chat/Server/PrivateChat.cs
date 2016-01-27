@@ -21,12 +21,13 @@ namespace Server
         /// <param name="e"></param>
         private void btnSend_Click(object sender, EventArgs e)
         {
-
+            DateTime time = DateTime.Now;
+            var timeString = time.ToString("H:mm:ss");
             if (txtInput.Text != string.Empty)
             {
                 foreach (var client in from ListViewItem item in Main.clientList.SelectedItems select (Client) item.Tag)
                 {
-                    client.Send("pMessage|" + txtInput.Text);                   
+                    client.Send("pMessage|" + txtInput.Text + "\r\n" + timeString+"\r\n");                   
                 }
                 txtReceive.Text += "Server says: " + txtInput.Text + "\r\n";
                 txtInput.Text = string.Empty;
