@@ -31,6 +31,9 @@ namespace Client
 
         public void _client_Received(ClientSettings cs, string received)
         {
+            DateTime time = DateTime.Now;
+            var timeString = time.ToString("H:mm:ss");
+
             var cmd = received.Split('|');
             switch (cmd[0])
             {
@@ -52,7 +55,7 @@ namespace Client
                 case "Message":
                     this.Invoke(() =>
                     {
-                        txtReceive.Text += cmd[1] + "\r\n";
+                        txtReceive.Text += cmd[1] + "\r\n" + timeString + "\r\n";
                     });
                     break;
                     // when repeate content chat with server.
@@ -82,7 +85,11 @@ namespace Client
                     break;
             }
         }
-
+        /// <summary>
+        /// client send public message for server
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSend_Click(object sender, EventArgs e)
         {
             if (txtInput.Text != string.Empty)

@@ -69,6 +69,9 @@ namespace Server
 
         private void client_Received(Client sender, byte[] data)
         {
+            DateTime time = DateTime.Now;
+            var timeString = time.ToString("H:mm:ss");
+
             //Executes the specified delegate on the thread that owns the control's underlying window handle.
             this.Invoke(() =>
             {
@@ -93,7 +96,7 @@ namespace Server
                             break;
                         // excute public chat
                         case "Message":
-                            txtReceive.Text += command[1] + " says: " + command[2] + "\r\n";
+                            txtReceive.Text += command[1] + " says: " + command[2] + "\r\n" +timeString + "\r\n";
                             BroadcastData("RefreshChat|" + txtReceive.Text);
                             break;
                         // excute private chat
@@ -121,7 +124,11 @@ namespace Server
             base.OnFormClosing(e);
             listener.Stop();
         }
-
+        /// <summary>
+        /// server send public message for client
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSend_Click(object sender, EventArgs e)
         {
             if (txtInput.Text != string.Empty)
