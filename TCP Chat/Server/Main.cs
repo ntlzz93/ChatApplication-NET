@@ -103,7 +103,7 @@ namespace Server
                         case "pMessage":
                             this.Invoke(() =>
                             {
-                                pChat.txtReceive.Text += command[1] + " says: " + command[2] + "\r\n";
+                                pChat.txtReceive.Text += command[1] + " says: " + command[2] + "\r\n"+timeString +"\r\n";
                             });
                             break;
                         case "pChat":

@@ -14,9 +14,14 @@ namespace Server
             InitializeComponent();
             Main = main;
         }
-
+        /// <summary>
+        /// private chat when server press send button.
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void btnSend_Click(object sender, EventArgs e)
         {
+
             if (txtInput.Text != string.Empty)
             {
                 foreach (var client in from ListViewItem item in Main.clientList.SelectedItems select (Client) item.Tag)
