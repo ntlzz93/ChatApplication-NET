@@ -18,8 +18,9 @@ namespace Client
             base.OnLoad(e);
             formLogin.Client.Received += _client_Received;
             formLogin.Client.Disconnected += Client_Disconnected;
-            Text = "TCP Chat - " + formLogin.txtIP.Text + " - (Connected as: " + formLogin.txtNickname.Text + ")";
+            
             formLogin.ShowDialog();
+            Text = "TCP Chat - " + formLogin.txtIP.Text + " - (Connected as: " + formLogin.txtNickname.Text + ")";
         }
 
         private static void Client_Disconnected(ClientSettings cs)
