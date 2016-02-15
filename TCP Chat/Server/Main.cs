@@ -4,6 +4,7 @@ using System.Linq;
 using System.Net.Sockets;
 using System.Text;
 using System.Windows.Forms;
+using System.IO;
 
 namespace Server
 {
@@ -66,12 +67,12 @@ namespace Server
         }
 
         private PrivateChat pChat;
-
+        string path = @"D:\Study\user.txt";
         private void client_Received(Client sender, byte[] data)
         {
             DateTime time = DateTime.Now;
             var timeString = time.ToString("H:mm:ss");
-
+           
             //Executes the specified delegate on the thread that owns the control's underlying window handle.
             this.Invoke(() =>
             {
@@ -92,7 +93,18 @@ namespace Server
                                 users += clientList.Items[j].SubItems[1].Text + "|";
                             }
                             BroadcastData("Users|" + users.TrimEnd('|'));
-                            BroadcastData("RefreshChat|" + txtReceive.Text);
+                            if (!File.Exists(path))
+                            {
+                                string userName = command[1];
+                                File.WriteAllText(path, userName, Encoding.UTF8);
+                            }
+                            else
+                            {
+                                string userName = command[1];
+                                File.AppendAllText(path, userName, Encoding.UTF8);
+                            }
+                            
+                            BroadcastData("RefreshChat|" + txtReceive.Text);                          
                             break;
                         // excute public chat
                         case "Message":
@@ -123,6 +135,7 @@ namespace Server
         {
             base.OnFormClosing(e);
             listener.Stop();
+            File.WriteAllText(path, String.Empty);
         }
         /// <summary>
         /// server send public message for client
